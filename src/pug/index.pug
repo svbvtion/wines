@@ -10,8 +10,9 @@ html(lang="en")
 		title Food &#38; Drink
 		link(rel='icon' href='./favicon.svg' type='image/x-icon')
 		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
-		link(rel="stylesheet" type="text/css" href="static/css/swiper.css")
-		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+		link(rel="stylesheet" type="text/css" href="static/css/swiper.css" media="print" onload="this.media='all'")
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css" media="print" onload="this.media='all'")
+		link(rel="stylesheet" type="text/css" href="static/css/critical.css")
 	body
 		+hero
 		main.content

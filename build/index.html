@@ -8,8 +8,9 @@
     <title>Food &#38; Drink</title>
     <link rel="icon" href="./favicon.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="static/css/swiper.css">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="static/css/swiper.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="static/css/critical.css">
   </head>
   <body>
     <div class="hero">
@@ -388,7 +389,7 @@
               <form class="formSub">
                 <div class="formSub__body">
                   <div class="formSub__field">
-                    <input class="formSub__input" id="formSub-email" type="email" placeholder="Email"/>
+                    <input class="formSub__input" id="formSub-email" type="email" placeholder="Email" required="required"/>
                     <label class="hidden" for="formSub-email">Email</label>
                     <button class="button button_primary formSub__button">Subscrible </button>
                   </div>
