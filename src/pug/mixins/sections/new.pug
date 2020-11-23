@@ -1,22 +1,52 @@
 mixin new()
 	section.new
 		.wrapper
-			.new__body
-				.new__text.new__item
-					.new__txt
-						p.new__preview New Wines
-						.new__name
-							h2.title.section__title.title_decor.new__title Merlot
-							p.section__subtitle.new__subtitle Winehouse Vineyard
-						p.section__descr.new__descr Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.
-					.new__buttons.buttons
-						a.button.button_primary.buttons__item.new__button(href="#") Learn more
-						a.button.button_secondary.buttons__item.new__button(href="#") View more  
-				.new__decor.decor.new__item
-					.decor__bg
-						.decor__square
-						.decor__round
-					.decor__bottle
-						+webp('decor__pic', 'merlot', 'png', 'bottle')
+			.new__wrap
+				.new__slider
+					.swiper-wrapper
+						.new__body.swiper-slide
+							.new__text.new__item
+								.new__txt
+									h2.new__preview New Wines
+									.new__name
+										h2.title.section__title.title_decor.new__title Merlot
+										p.section__subtitle.new__subtitle Winehouse Vineyard
+									p.section__descr.new__descr Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.
+								.new__buttons.buttons
+									a.button.button_primary.buttons__item.new__button(href="#") Learn more
+									a.button.button_secondary.buttons__item.new__button(href="#") View more  
+							.new__decor.decor.new__item
+								.decor__bg
+									.decor__square
+										span.new__slider-prev.new__slider-button
+											span.new__slider_txt Prev
+										span.new__slider-next.new__slider-button
+											span.new__slider_txt Next
+									.decor__round
+								.decor__bottle
+									+webp('decor__pic', 'merlot', 'png', 'bottle')
+						.new__body.swiper-slide
+							.new__text.new__item
+								.new__txt
+									h2.new__preview New Wines
+									.new__name
+										h2.title.section__title.title_decor.new__title Merlot
+										p.section__subtitle.new__subtitle Winehouse Vineyard
+									p.section__descr.new__descr Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.
+								.new__buttons.buttons
+									a.button.button_primary.buttons__item.new__button(href="#") Learn more
+									a.button.button_secondary.buttons__item.new__button(href="#") View more  
+							.new__decor.decor.new__item
+								.decor__bg
+									.decor__square
+										span.new__slider-prev.new__slider-button
+											span.new__slider_txt Prev
+										span.new__slider-next.new__slider-button
+											span.new__slider_txt Next
+									.decor__round
+
+								.decor__bottle
+									+webp('decor__pic', 'merlot', 'png', 'bottle')
+
 
 

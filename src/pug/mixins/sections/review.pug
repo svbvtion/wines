@@ -2,22 +2,37 @@ mixin review()
 	section.reviews
 		.reviews__bg
 			+webpResp('reviews__pic', 'testi-bg', 'png', 'review background')
+		
 
 		.wrapper
-			.reviews__body
-				h2.title.section__title.reviews__title Client <span class="title_decor">Review<span>
-				.reviews__slider
-					.review
-						.review__photo
-							+webp('review__avatar', 'person', 'jpg', 'reviewer')
-						span.review__name David Luice
-						p.review__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+			h2.title.section__title.reviews__title Client <span class="title_decor">Review</span>
+
+			.reviews__wrap
+				.reviews__slide
+					.swiper-wrapper
+						.reviews__body.swiper-slide
+							.reviews__slider
+								.review
+									.review__photo
+										+webp('review__avatar', 'person', 'jpg', 'reviewer')
+									span.review__name David Luice
+									p.review__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+						.reviews__body.swiper-slide
+							.reviews__slider
+								.review
+									.review__photo
+										+webp('review__avatar', 'person', 'jpg', 'reviewer')
+									span.review__name David Luice
+									p.review__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+						.reviews__body.swiper-slide
+							.reviews__slider
+								.review
+									.review__photo
+										+webp('review__avatar', 'person', 'jpg', 'reviewer')
+									span.review__name David Luice
+									p.review__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
 
 					.dots
-						span.dot.dot_active 
-						span.dot 
-						span.dot 
-						span.dot 
-						span.dot 
+							
 
 

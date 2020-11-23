@@ -1,8 +1,12 @@
 .contacts
-	padding: 150px 0 190px 0
+	padding: 10px 0 190px 0
+	+phone
+		padding: 50px 0 50px
 	&__title
 		text-align: center
 		margin-bottom: 80px
+		+phone
+			margin-bottom: 60px
 	&__content
 		+flex(space-between)
 		flex-wrap: wrap
@@ -73,6 +77,8 @@
 		margin-bottom: 30px
 		height: 64px
 		position: relative
+		+phone
+			height: 55px
 		&_textarea
 			height: 135px
 
@@ -102,9 +108,13 @@
 		background-color: $black
 		margin-left: 40px
 		transition: color .3s ease-in
+		+phone
+			font-size: 1.2rem
 	&__button
 		padding: 5px 55px
 		font-size: 36px
 		line-height: 1.8
 		+phone
 			width: 100%
+			line-height: 1.5
+			font-size: 2rem

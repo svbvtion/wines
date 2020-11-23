@@ -8,6 +8,7 @@
     <title>Food &#38; Drink</title>
     <link rel="icon" href="./favicon.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/css/swiper.css">
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   </head>
   <body>
@@ -72,27 +73,57 @@
     <main class="content">
       <section class="new">
         <div class="wrapper">
-          <div class="new__body">
-            <div class="new__text new__item">
-              <div class="new__txt">
-                <p class="new__preview">New Wines</p>
-                <div class="new__name">
-                  <h2 class="title section__title title_decor new__title">Merlot</h2>
-                  <p class="section__subtitle new__subtitle">Winehouse Vineyard</p>
+          <div class="new__wrap">
+            <div class="new__slider">
+              <div class="swiper-wrapper">
+                <div class="new__body swiper-slide">
+                  <div class="new__text new__item">
+                    <div class="new__txt">
+                      <h2 class="new__preview">New Wines</h2>
+                      <div class="new__name">
+                        <h2 class="title section__title title_decor new__title">Merlot</h2>
+                        <p class="section__subtitle new__subtitle">Winehouse Vineyard</p>
+                      </div>
+                      <p class="section__descr new__descr">Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.</p>
+                    </div>
+                    <div class="new__buttons buttons"><a class="button button_primary buttons__item new__button" href="#">Learn more</a><a class="button button_secondary buttons__item new__button" href="#">View more  </a></div>
+                  </div>
+                  <div class="new__decor decor new__item">
+                    <div class="decor__bg">
+                      <div class="decor__square"><span class="new__slider-prev new__slider-button"><span class="new__slider_txt">Prev</span></span><span class="new__slider-next new__slider-button"><span class="new__slider_txt">Next</span></span></div>
+                      <div class="decor__round"></div>
+                    </div>
+                    <div class="decor__bottle">
+                      <picture>
+                        <source srcset="static/img/merlot.webp" type="image/webp"/><img class="decor__pic" src="static/img/merlot.png" alt="bottle" loading="lazy"/>
+                      </picture>
+                    </div>
+                  </div>
                 </div>
-                <p class="section__descr new__descr">Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.</p>
-              </div>
-              <div class="new__buttons buttons"><a class="button button_primary buttons__item new__button" href="#">Learn more</a><a class="button button_secondary buttons__item new__button" href="#">View more  </a></div>
-            </div>
-            <div class="new__decor decor new__item">
-              <div class="decor__bg">
-                <div class="decor__square"></div>
-                <div class="decor__round"></div>
-              </div>
-              <div class="decor__bottle">
-                <picture>
-                  <source srcset="static/img/merlot.webp" type="image/webp"/><img class="decor__pic" src="static/img/merlot.png" alt="bottle" loading="lazy"/>
-                </picture>
+                <div class="new__body swiper-slide">
+                  <div class="new__text new__item">
+                    <div class="new__txt">
+                      <h2 class="new__preview">New Wines</h2>
+                      <div class="new__name">
+                        <h2 class="title section__title title_decor new__title">Merlot</h2>
+                        <p class="section__subtitle new__subtitle">Winehouse Vineyard</p>
+                      </div>
+                      <p class="section__descr new__descr">Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.</p>
+                    </div>
+                    <div class="new__buttons buttons"><a class="button button_primary buttons__item new__button" href="#">Learn more</a><a class="button button_secondary buttons__item new__button" href="#">View more  </a></div>
+                  </div>
+                  <div class="new__decor decor new__item">
+                    <div class="decor__bg">
+                      <div class="decor__square"><span class="new__slider-prev new__slider-button"><span class="new__slider_txt">Prev</span></span><span class="new__slider-next new__slider-button"><span class="new__slider_txt">Next</span></span></div>
+                      <div class="decor__round"></div>
+                    </div>
+                    <div class="decor__bottle">
+                      <picture>
+                        <source srcset="static/img/merlot.webp" type="image/webp"/><img class="decor__pic" src="static/img/merlot.png" alt="bottle" loading="lazy"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -109,22 +140,52 @@
             <source srcset="static/img/testi-bg-800.png 1x, static/img/testi-bg-1600.png 2x, static/img/testi-bg-2400.png 3x" media="(min-width: 750px)"/>
             <source type="image/webp" srcset="static/img/testi-bg-600.webp 1x, static/img/testi-bg-1200.webp 2x, static/img/testi-bg-1800.webp 3x" media="(min-width: 450px)"/>
             <source srcset="static/img/testi-bg-600.png 1x, static/img/testi-bg-1200.png 2x, static/img/testi-bg-1800.png 3x" media="(min-width: 450px)"/>
-            <source type="image/webp" srcset="static/img/testi-bg-400.webp 1x, static/img/testi-bg-800.webp 2x, static/img/testi-bg-1200.webp 3x" media="(min-width: 0px)"/><img class="reviews__pic" srcset="static/img/testi-bg-400.png 1x, static/img/testi-bg-800.png 2x, static/img/testi-bg-1200.png 3x" media="(min-width: 0px)" loading="lazy" alt="review background"/>
+            <source type="image/webp" srcset="static/img/testi-bg-400.webp 1x, static/img/testi-bg-800.webp 2x, static/img/testi-bg-1200.webp 3x" media="(min-width: 0px)"/><img class="reviews__pic" srcset="static/img/testi-bg-400.png 1x, static/img/testi-bg-800.png 2x, static/img/testi-bg-1200.png 3x" media="(min-width: 0px)" src="static/img/testi-bg-400.png" loading="lazy" alt="review background"/>
           </picture>
         </div>
         <div class="wrapper">
-          <div class="reviews__body">
-            <h2 class="title section__title reviews__title">Client <span class="title_decor">Review<span></h2>
-            <div class="reviews__slider">
-              <div class="review">
-                <div class="review__photo">
-                  <picture>
-                    <source srcset="static/img/person.webp" type="image/webp"/><img class="review__avatar" src="static/img/person.jpg" alt="reviewer" loading="lazy"/>
-                  </picture>
-                </div><span class="review__name">David Luice</span>
-                <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
+          <h2 class="title section__title reviews__title">Client <span class="title_decor">Review</span></h2>
+          <div class="reviews__wrap">
+            <div class="reviews__slide">
+              <div class="swiper-wrapper">
+                <div class="reviews__body swiper-slide">
+                  <div class="reviews__slider">
+                    <div class="review">
+                      <div class="review__photo">
+                        <picture>
+                          <source srcset="static/img/person.webp" type="image/webp"/><img class="review__avatar" src="static/img/person.jpg" alt="reviewer" loading="lazy"/>
+                        </picture>
+                      </div><span class="review__name">David Luice</span>
+                      <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__body swiper-slide">
+                  <div class="reviews__slider">
+                    <div class="review">
+                      <div class="review__photo">
+                        <picture>
+                          <source srcset="static/img/person.webp" type="image/webp"/><img class="review__avatar" src="static/img/person.jpg" alt="reviewer" loading="lazy"/>
+                        </picture>
+                      </div><span class="review__name">David Luice</span>
+                      <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__body swiper-slide">
+                  <div class="reviews__slider">
+                    <div class="review">
+                      <div class="review__photo">
+                        <picture>
+                          <source srcset="static/img/person.webp" type="image/webp"/><img class="review__avatar" src="static/img/person.jpg" alt="reviewer" loading="lazy"/>
+                        </picture>
+                      </div><span class="review__name">David Luice</span>
+                      <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis. Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus, non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="dots"><span class="dot dot_active"> </span><span class="dot"> </span><span class="dot"> </span><span class="dot"> </span><span class="dot"> </span></div>
+              <div class="dots"></div>
             </div>
           </div>
         </div>
@@ -134,17 +195,53 @@
           <div class="events__body">
             <h2 class="title section__title events__title">Featured <span class="title_decor">Events</span></h2>
             <div class="events__slider">
-              <div class="event">
-                <div class="event__decor">
-                  <picture>
-                    <source srcset="static/img/featured.webp" type="image/webp"/><img class="event__pic" src="static/img/featured.png" alt="events photo" loading="lazy"/>
-                  </picture>
+              <div class="swiper-wrapper">
+                <div class="event swiper-slide">
+                  <div class="event__decor">
+                    <picture>
+                      <source srcset="static/img/featured.webp" type="image/webp"/><img class="event__pic" src="static/img/featured.png" alt="events photo" loading="lazy"/>
+                    </picture>
+                  </div>
+                  <div class="event__content">
+                    <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                  </div>
                 </div>
-                <div class="event__content">
-                  <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
-                  <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                <div class="event swiper-slide">
+                  <div class="event__decor">
+                    <picture>
+                      <source srcset="static/img/featured.webp" type="image/webp"/><img class="event__pic" src="static/img/featured.png" alt="events photo" loading="lazy"/>
+                    </picture>
+                  </div>
+                  <div class="event__content">
+                    <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                  </div>
+                </div>
+                <div class="event swiper-slide">
+                  <div class="event__decor">
+                    <picture>
+                      <source srcset="static/img/featured.webp" type="image/webp"/><img class="event__pic" src="static/img/featured.png" alt="events photo" loading="lazy"/>
+                    </picture>
+                  </div>
+                  <div class="event__content">
+                    <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                  </div>
+                </div>
+                <div class="event swiper-slide">
+                  <div class="event__decor">
+                    <picture>
+                      <source srcset="static/img/featured.webp" type="image/webp"/><img class="event__pic" src="static/img/featured.png" alt="events photo" loading="lazy"/>
+                    </picture>
+                  </div>
+                  <div class="event__content">
+                    <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                  </div>
                 </div>
               </div>
+              <div class="dots"></div>
             </div>
           </div>
         </div>
@@ -202,7 +299,7 @@
                       <label class="formUs__label" for="formUs_phone">Phone</label>
                     </div>
                     <div class="formUs__field formUs__field_textarea">
-                      <textarea class="formUs__input formUs__textarea" id="formUs_message" type="text"></textarea>
+                      <textarea class="formUs__input formUs__textarea" id="formUs_message"></textarea>
                       <label class="formUs__label" for="formUs_message">Message</label>
                     </div>
                     <div class="formUs__submit">
@@ -324,5 +421,6 @@
     </footer>
     <script src="static/js/header.js"></script>
     <script src="static/js/adapt.js"></script>
+    <script src="static/js/sliders.js" type="module"></script>
   </body>
 </html>
