@@ -1,0 +1,49 @@
+.amazing
+	padding: 150px 0 0
+
+	+phone
+		padding: 50px 0
+	&__title
+		text-align: center
+		margin-bottom: 90px
+		+phone
+			margin-bottom: 35px
+	.swiper-wrapper
+		align-items: center
+		margin-bottom: 50px
+	&__slide
+		height: 65vh
+		width: 370px
+		position: relative
+		padding: 10px 25px
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		+phone
+			padding: 10px
+		&:hover
+			.amazing
+				&__bg
+					+overlay(#000, 0)
+
+		&.swiper-slide-next
+			+rmin(850)
+				height: 70vh
+				
+
+	&__bg
+		+bg-box
+		+overlay
+
+
+	&__pic
+		+bg-pic(top)
+	&__text
+		position: relative
+	&__name
+		font-family: $font-secondary
+		font-size: 24px
+	&__price
+		font-size: 36px
+		font-weight: 700
+		line-height: 1.5

@@ -47,11 +47,12 @@
 =smooth($delay:.3, $type:ease)
 	transition: all $delay+s $type
 
-=overlay($color:#000, $opacity:.5)
+=overlay($color:#000, $opacity:.5, $delay:.3)
 	&:after
 		content: ''
 		background-color: rgba($color, $opacity)
 		+bg-box
+		+smooth($delay)
 
 =hidden
 	bottom: 0
