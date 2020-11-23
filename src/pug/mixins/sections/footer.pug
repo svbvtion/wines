@@ -1,0 +1,83 @@
+mixin footer()
+	.wrapper
+		.footer__body
+			.footer__links
+				.footer__sections
+					.footer-section
+						.footer-section__header Company
+						.footer-section__body
+							ul.footer-section__list
+								li.footer-section__item
+									a.footer-section__link.link(href="#") About Us
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Contact Us
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Privacy Policy
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Terms &amp; Conditions
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Support Center
+					.footer-section
+						.footer-section__header question?
+						.footer-section__body
+							ul.footer-section__list
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Help Support
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Track Order
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Return
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Shipping Info
+								li.footer-section__item
+									a.footer-section__link.link(href="#") History
+					.footer-section
+						.footer-section__header useful links
+						.footer-section__body
+							ul.footer-section__list
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Gift Cards
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Size Chart
+								li.footer-section__item
+									a.footer-section__link.link(href="#") My Account
+								li.footer-section__item
+									a.footer-section__link.link(href="#") Our Locations
+								li.footer-section__item
+									a.footer-section__link.link(href="#") FAQS
+					.footer-section
+						.footer-section__header connect with us
+						.footer-section__body
+							ul.footer-section__list
+								li.footer-section__list_contacts
+									.contacts__links
+										a.contacts__link(href="#")
+											span.hidden gmail link
+											+webp('contacts__icon', 'google', 'png', 'google')
+										a.contacts__link(href="#")
+											span.hidden twitter link
+											+webp('contacts__icon', 'twitter', 'png', 'twitter')
+										a.contacts__link(href="#")
+											span.hidden linked in link
+											+webp('contacts__icon', 'linkedin', 'png', 'linked in')
+										a.contacts__link(href="#")
+											span.hidden facebook link
+											+webp('contacts__icon', 'facebook', 'png', 'facebook')
+									
+									li.footer-contact__link
+										a.contact(href="tel:+012-3254-6987")
+											.contact__body
+												+svgTrue('Call', 'contact__icon')
+												span.contact__text.link +012-3254-6987
+										a.contact(href="mailto:Food&drink@gmail.com")
+											.contact__body
+												+svgTrue('Message', 'contact__icon')
+												span.contact__text.link Food&amp;drink@gmail.com
+										a.contact(href="#")
+											.contact__body
+												+svgTrue('Location', 'contact__icon')
+												span.contact__text.link Brahmanbaira, Dhaka, Bangladesh
+			.footer__bottom
+				span.footer__copy &copy; Copyright 2020 wine&amp;food All Rights Reserved (Designhunterrbd) 
+
+			

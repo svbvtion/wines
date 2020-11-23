@@ -1,0 +1,52 @@
+.events
+	margin: 100px 0 0
+	&__title
+		text-align: center
+		margin-bottom: 55px
+	&__slider
+		background-color: $bg-secondary
+.event
+	+flex()
+	+phone
+		flex-direction: column
+
+	&__decor
+		min-height: 410px
+		width: 370px
+		position: relative
+		+phone
+			width: 100%
+			min-height: 350px
+		+r(350)
+			min-height: 200px
+	&__pic
+		+bg-pic(top)
+	&__content
+		padding: 60px 20px 55px 30px
+		width: 550px
+		+phone
+			width: 100%
+		+r(350)
+			padding: 30px 20px
+	&__header
+		margin-bottom: 40px
+		+r(350)
+			margin-bottom: 25px
+	&__title
+		font-size: 24px
+		line-height: 1.5
+		font-weight: 700
+		display: block
+	&__date
+		font-size: 18px
+		line-height: 1.5
+	&__descr
+		line-height: 1.5
+		margin-bottom: 40px
+		+r(350)
+			margin-bottom: 25px
+	&__link
+		font-family: $font-secondary
+		font-size: 18px
+
+

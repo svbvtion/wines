@@ -1,0 +1,102 @@
+.footer
+	&__links
+		padding: 130px 0 90px
+		+phone
+			padding: 50px 0 50px
+	&__bottom
+		text-align: center
+		padding: 25px 0 35px
+		border-top: 1px solid $border-primary
+	&__copy
+		font-size: 16px
+		line-height: 2
+	&__sections
+		+flex(space-between)
+		flex-wrap: wrap
+
+		+r(950)
+			flex-direction: column
+		
+	&-section
+		flex: 1
+		+r(950)
+			text-align: center
+		&__header
+			font-family: $font-secondary
+			color: $txt-secondary
+			font-size: 24px
+			margin-bottom: 30px
+			+r(950)
+				text-align: center
+				padding: 20px 0
+				background-color: $gold
+				color: $black
+				margin: 0
+				border-bottom: 1px solid $black
+				cursor: pointer
+				display: block
+			+phone
+				font-size: 1.2rem
+		&__list
+			list-style: none
+			+r(950)
+				padding: 15px 0
+		&__body
+			+r(950)
+				+smooth
+				max-height: 0
+				overflow: hidden
+
+		&__list
+			&_contacts
+				+r(950)
+					display: flex
+					align-items: center
+					flex-direction: column-reverse
+					padding: 0 15px
+
+
+		&__item
+			margin-top: 15px
+			&:first-child
+				+r(950)
+					margin-top: 0
+		&__link
+			color: $txt-primary
+			font-size: 16px
+			line-height: 1.5
+		.contacts
+
+			&__links
+				margin-left: -40px
+
+			&__link
+				margin-left: 40px
+				height: 24px
+				width: 24px
+
+			&__icon
+				height: 24px
+				width: 24px
+
+		.contact
+			margin: 0 0 30px
+			&__text
+				font-size: 16px
+				+r(950)
+					font-size: 1rem
+			&__icon
+				min-height: 1rem
+				min-width: 1rem
+				max-height: 1rem
+				max-width: 1rem
+				margin-right: 15px
+			&__body
+				text-align: left
+	&-contact
+
+		&__link
+			margin-top: 30px
+			+r(950)	
+				margin-top: 0
+				display: inline-block

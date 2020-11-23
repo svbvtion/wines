@@ -1,18 +1,27 @@
 include mixins/mixin
+include mixins/sections/sections
 doctype html
 html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		meta(name="description" content="desrc")
-		title Document
-		link(rel='icon' href='./favicon.ico' type='image/x-icon')
+		meta(name="description" content="Food & Drink")
+		title Food &#38; Drink
+		link(rel='icon' href='./favicon.svg' type='image/x-icon')
 		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
 		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
 	body
-		header.hero
-
+		+hero
 		main.content
+			+new
+			+review
+			+events
+			+contactUs
+			+subscrible
 
 		footer.footer
+			+footer
+
+		script(src="static/js/header.js")
+		script(src="static/js/adapt.js")

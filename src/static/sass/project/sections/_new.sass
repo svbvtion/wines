@@ -1,0 +1,106 @@
+.new
+	padding: 140px 0
+	background-color: $bg-secondary
+	&__body
+		+flex(space-between, center)
+		margin: -40px 0 0 -40px
+		+r(1000)
+			flex-direction: column
+	&__text
+		max-width: 750px
+		flex: 1 1 
+	&__preview
+		font-size: 20px
+		font-weight: lighter
+		margin-bottom: 25px
+	&__name
+		margin-bottom: 40px
+		+phone
+			margin-bottom: 20px
+	&__item
+		margin: 40px 0 0 40px
+	&__title
+		font-size: 75px
+		margin-bottom: 10px
+		+phone
+			font-size: 3rem
+	&__subtitle
+		line-height: 1.2
+	&__descr
+		line-height: 1.5
+	&__txt
+		margin-bottom: 50px
+		+phone
+			margin-bottom: 30px
+	&__buttons
+		+flex(space-between, center)
+		margin: -20px 0 0 -3vw
+		flex-wrap: wrap
+	&__button
+		font-size: 20px
+		padding: 20px 30px
+		flex: 1
+		margin: 20px 0 0 3vw
+		text-align: center
+		white-space: nowrap
+	&__decor
+		flex: 1 1
+		height: 700px
+		width: 550px
+		position: relative
+			
+		+phone
+			height: 500px
+			width: calc(100% - 40px)
+
+		+r(450)
+			height: 400px
+		+r(300)
+
+.decor
+	position: relative
+	+flex(center)
+
+	&__square
+		width: 100%
+		height: 480px
+		border: 10px solid $border-secondary
+		position: absolute
+		+center
+		+phone
+			height: 400px
+			width: 100%
+		+r(450)
+			height: 300px
+			width: 100%
+		+r(300)
+			height: 250px
+			width: 100%
+	&__round
+		height: 30vmax
+		width: 30vmax
+		max-width: 375px
+		max-height: 375px
+		border-radius: 50%
+		background-color: $gold 
+		position: absolute
+		+center
+		+phone
+			height: 300px
+			width: 300px
+		+r(450)
+			height: 200px
+			width: 200px
+		+r(300)
+			height: 150px
+			width: 150px
+
+	&__bottle
+		position: relative
+		height: 100%
+	&__pic
+		height: 100%
+		width: auto
+
+
+

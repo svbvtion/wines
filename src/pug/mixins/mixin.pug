@@ -5,7 +5,7 @@ mixin svg(name,mod)
 		svg(class="icon-" + name + ' ' + mod)
 			use(xlink:href="static/img/svg/sprite.svg#" + name)
 			
-mixin svgtrue(name,mod)
+mixin svgTrue(name,mod)
 		- mod = mod || ''
 		svg(class="icon-" + name + ' ' + mod)
 			use(xlink:href="static/img/svg/sprite-true.svg#" + name)

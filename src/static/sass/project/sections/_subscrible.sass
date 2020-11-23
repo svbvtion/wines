@@ -1,0 +1,42 @@
+.subscrible
+	background-color: $bg-secondary
+	padding: 60px 0
+	&__header
+		text-align: center
+		margin-bottom: 65px
+	&__title
+		margin-bottom: 20px
+	&__subtitle
+		font-size: 18px
+		line-height: 1.5
+		+phone
+			font-size: 1rem
+
+.formSub
+	&__body
+		max-width: 570px
+		margin: 0 auto
+	&__field
+		height: 64px
+		position: relative
+		+flex
+	&__input
+		height: 100%
+		width: 100%
+		background-color: $black
+		border: none
+		padding: 0 35px
+		color: $txt-primary
+		font-size: 18px
+		&::placeholder
+			color: $txt-primary
+		+phone
+			padding: 0 10px
+			font-size: 1rem
+	&__button
+		height: 100%
+		padding: 0 18px
+		font-size: 18px
+		+phone
+			padding: 0 10px
+			font-size: 1rem

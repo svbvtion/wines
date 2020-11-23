@@ -1,0 +1,56 @@
+mixin hero()
+	.hero
+		.hero__top
+			.wrapper
+				header.header
+					.header__top
+						span.header__freeship(data-da="header__nav, 767, last") We Ship Everywhere! Free In The Us!
+						.header__logo
+							a.logo(href="./")
+								span.hidden Logo "Food &amp; Drinks" 
+								.logo__bg
+									+webp('logo__pic', 'logo', 'png', 'Food & Drinks')
+						.header__right
+							.header__links
+								.header__links_adapt(data-da="nav, 550, last")
+									a.header__link.link(href="#") Login
+									a.header__link.link(href="#") Register
+									a.header__link.link.header__wishlist(href="#") Wish List <span class="header__wishlist_count">(0)</span>
+								a.header__link.link.header__link_iconed(href="#")
+									span.hidden Search
+									+svgTrue('Search', 'header__link-icon')
+								a.header__link.link.header__link_iconed(href="#")
+									span.hidden Bag
+									+svgTrue('Bag', 'header__link-icon')
+							.header__burger
+								.burger
+									span.burger__decor
+					.header__nav
+						.nav
+							ul.nav__list
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Home
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Vintage
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Imperial
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Sparkling
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Accessories
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Blog
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Product Details
+								li.nav__item
+									a.nav__link.link.link_bordered(href="#") Contact
+		.hero__body
+			.wrapper
+				.hero__content
+					p.hero__subtitle The Experlence of Generations
+					h1.hero__title.title In each <span class="title_decor">bottle</span>
+					p.hero__descr Experience a true “American Dream” at Winehouse and visit the first tasting room in the United States established by a former European mirgant vineyard worker and his family.
+					a.hero__link.link.link_bordered(href="#") READ MORE
+		.hero__bg
+			+webp('hero__pic', 'hero', 'png', 'hero background image')
+		
