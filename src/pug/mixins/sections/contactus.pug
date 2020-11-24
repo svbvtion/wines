@@ -1,5 +1,5 @@
 mixin contactUs()
-	section.contacts
+	section.contacts#contacts
 		.wrapper
 			.contacts__body
 				h2.title.section__title.contacts__title Contacs <span class="title_decor">us</span>
@@ -7,29 +7,29 @@ mixin contactUs()
 					.contacts__text.contacts__item
 						p.contacts__descr.section__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.Lorem ipsum dolor sit amet, consectetur 
 						.contacts__list.contact
-							a.contact(href="tel:+012-3254-6987")
+							a.contact.js-modal-button(href="tel:+012-3254-6987")
 								.contact__body
 									+svgTrue('Call', 'contact__icon')
 									span.contact__text +012-3254-6987
-							a.contact(href="mailto:Food&drink@gmail.com")
+							a.contact.js-modal-button(href="mailto:Food&drink@gmail.com")
 								.contact__body
 									+svgTrue('Message', 'contact__icon')
 									span.contact__text Food&amp;drink@gmail.com
-							a.contact(href="#")
+							a.contact.js-modal-button(href="#")
 								.contact__body
 									+svgTrue('Location', 'contact__icon')
 									span.contact__text Brahmanbaira, Dhaka, Bangladesh
 						.contacts__links
-							a.contacts__link(href="#")
+							a.contacts__link.js-modal-button(href="#")
 								span.hidden gmail link
 								+webp('contacts__icon', 'google', 'png', 'google')
-							a.contacts__link(href="#")
+							a.contacts__link.js-modal-button(href="#")
 								span.hidden twitter link
 								+webp('contacts__icon', 'twitter', 'png', 'twitter')
-							a.contacts__link(href="#")
+							a.contacts__link.js-modal-button(href="#")
 								span.hidden linked in link
 								+webp('contacts__icon', 'linkedin', 'png', 'linked in')
-							a.contacts__link(href="#")
+							a.contacts__link.js-modal-button(href="#")
 								span.hidden facebook link
 								+webp('contacts__icon', 'facebook', 'png', 'facebook')
 
@@ -51,4 +51,4 @@ mixin contactUs()
 									textarea.formUs__input.formUs__textarea#formUs_message
 									label.formUs__label(for="formUs_message") Message
 								.formUs__submit
-									button.button.button_primary.formUs__button(type="submit") Send
+									button.button.button_primary.formUs__button.js-modal-button(type="submit") Send

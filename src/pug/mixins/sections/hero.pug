@@ -13,13 +13,13 @@ mixin hero()
 						.header__right
 							.header__links
 								.header__links_adapt(data-da="nav, 550, last")
-									a.header__link.link(href="#") Login
-									a.header__link.link(href="#") Register
-									a.header__link.link.header__wishlist(href="#") Wish List <span class="header__wishlist_count">(0)</span>
-								a.header__link.link.header__link_iconed(href="#")
+									a.header__link.link.js-modal-button(href="#") Login
+									a.header__link.link.js-modal-button(href="#") Register
+									a.header__link.link.header__wishlist.js-modal-button(href="#") Wish List <span class="header__wishlist_count">(0)</span>
+								a.header__link.link.header__link_iconed#search(href="#")
 									span.hidden Search
 									+svgTrue('Search', 'header__link-icon')
-								a.header__link.link.header__link_iconed(href="#")
+								a.header__link.link.header__link_iconed.js-modal-button(href="#")
 									span.hidden Bag
 									+svgTrue('Bag', 'header__link-icon')
 							.header__burger
@@ -29,21 +29,21 @@ mixin hero()
 						.nav
 							ul.nav__list
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Home
+									a.nav__link.link.link_bordered(href="./") Home
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Vintage
+									a.nav__link.link.link_bordered(href="#new") New
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Imperial
+									a.nav__link.link.link_bordered(href="#reviews") Reviews
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Sparkling
+									a.nav__link.link.link_bordered(href="#offers") Offers
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Accessories
+									a.nav__link.link.link_bordered(href="#events") Events
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Blog
+									a.nav__link.link.link_bordered(href="#contacts") Contacts
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Product Details
+									a.nav__link.link.link_bordered(href="#subscrible") Subscrible
 								li.nav__item
-									a.nav__link.link.link_bordered(href="#") Contact
+									a.nav__link.link.link_bordered(href="#links") Links
 		.hero__body
 			.wrapper
 				.hero__content

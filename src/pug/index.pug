@@ -14,7 +14,9 @@ html(lang="en")
 		link(rel="stylesheet" type="text/css" href="static/css/styles.css" media="print" onload="this.media='all'")
 		link(rel="stylesheet" type="text/css" href="static/css/critical.css")
 	body
+		+search
 		+hero
+		
 		main.content
 			+new
 			+review
@@ -23,8 +25,9 @@ html(lang="en")
 			+contactUs
 			+subscrible
 
-		footer.footer
+		footer.footer#links
 			+footer
+		+modal
 
 		script(src="static/js/header.js")
 		script(src="static/js/adapt.js")

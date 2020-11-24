@@ -1,0 +1,13 @@
+mixin search()
+	.search
+		.search__overlay(data-close="true")
+			.search__window
+				.wrapper.search__wrapper
+					.search__body
+						.search__form
+							form.formSearch
+								.formSearch__body
+									.formSearch__field
+										input.formSearch__input#formSearch-input(type="text" placeholder="Search")
+										label.hidden(for="formSearch-input") Search
+										button.button.button_primary.formSearch__button.js-modal-button Search 

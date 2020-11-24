@@ -13,6 +13,27 @@
     <link rel="stylesheet" type="text/css" href="static/css/critical.css">
   </head>
   <body>
+    <div class="search">
+      <div class="search__overlay" data-close="true">
+        <div class="search__window">
+          <div class="wrapper search__wrapper">
+            <div class="search__body">
+              <div class="search__form">
+                <form class="formSearch">
+                  <div class="formSearch__body">
+                    <div class="formSearch__field">
+                      <input class="formSearch__input" id="formSearch-input" type="text" placeholder="Search"/>
+                      <label class="hidden" for="formSearch-input">Search</label>
+                      <button class="button button_primary formSearch__button js-modal-button">Search </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="hero">
       <div class="hero__top">
         <div class="wrapper">
@@ -26,10 +47,10 @@
                   </div></a></div>
               <div class="header__right">
                 <div class="header__links">
-                  <div class="header__links_adapt" data-da="nav, 550, last"><a class="header__link link" href="#">Login</a><a class="header__link link" href="#">Register</a><a class="header__link link header__wishlist" href="#">Wish List <span class="header__wishlist_count">(0)</span></a></div><a class="header__link link header__link_iconed" href="#"><span class="hidden">Search</span>
+                  <div class="header__links_adapt" data-da="nav, 550, last"><a class="header__link link js-modal-button" href="#">Login</a><a class="header__link link js-modal-button" href="#">Register</a><a class="header__link link header__wishlist js-modal-button" href="#">Wish List <span class="header__wishlist_count">(0)</span></a></div><a class="header__link link header__link_iconed" id="search" href="#"><span class="hidden">Search</span>
                     <svg class="icon-Search header__link-icon">
                       <use xlink:href="static/img/svg/sprite-true.svg#Search"></use>
-                    </svg></a><a class="header__link link header__link_iconed" href="#"><span class="hidden">Bag</span>
+                    </svg></a><a class="header__link link header__link_iconed js-modal-button" href="#"><span class="hidden">Bag</span>
                     <svg class="icon-Bag header__link-icon">
                       <use xlink:href="static/img/svg/sprite-true.svg#Bag"></use>
                     </svg></a>
@@ -42,14 +63,14 @@
             <div class="header__nav">
               <div class="nav">
                 <ul class="nav__list">
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Home</a></li>
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Vintage</a></li>
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Imperial</a></li>
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Sparkling</a></li>
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Accessories</a></li>
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Blog</a></li>
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Product Details</a></li>
-                  <li class="nav__item"><a class="nav__link link link_bordered" href="#">Contact</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="./">Home</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="#new">New</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="#reviews">Reviews</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="#offers">Offers</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="#events">Events</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="#contacts">Contacts</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="#subscrible">Subscrible</a></li>
+                  <li class="nav__item"><a class="nav__link link link_bordered" href="#links">Links</a></li>
                 </ul>
               </div>
             </div>
@@ -72,7 +93,7 @@
       </div>
     </div>
     <main class="content">
-      <section class="new">
+      <section class="new" id="new">
         <div class="wrapper">
           <div class="new__wrap">
             <div class="new__slider">
@@ -87,7 +108,7 @@
                       </div>
                       <p class="section__descr new__descr">Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.</p>
                     </div>
-                    <div class="new__buttons buttons"><a class="button button_primary buttons__item new__button" href="#">Learn more</a><a class="button button_secondary buttons__item new__button" href="#">View more  </a></div>
+                    <div class="new__buttons buttons"><a class="button button_primary buttons__item new__button js-modal-button" href="#">Learn more</a><a class="button button_secondary buttons__item new__button js-modal-button" href="#">View more  </a></div>
                   </div>
                   <div class="new__decor decor new__item">
                     <div class="decor__bg">
@@ -111,7 +132,7 @@
                       </div>
                       <p class="section__descr new__descr">Merlot is loved for its boisterous black cherry flavors, supple tannins, and chocolatey finish. On the high end, it’s often mistaken with Cabernet Sauvignon.</p>
                     </div>
-                    <div class="new__buttons buttons"><a class="button button_primary buttons__item new__button" href="#">Learn more</a><a class="button button_secondary buttons__item new__button" href="#">View more  </a></div>
+                    <div class="new__buttons buttons"><a class="button button_primary buttons__item new__button js-modal-button" href="#">Learn more</a><a class="button button_secondary buttons__item new__button js-modal-button" href="#">View more  </a></div>
                   </div>
                   <div class="new__decor decor new__item">
                     <div class="decor__bg">
@@ -130,7 +151,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="reviews__bg">
           <picture>
             <source type="image/webp" srcset="static/img/testi-bg-1800.webp 1x, static/img/testi-bg-3600.webp 2x, static/img/testi-bg-5400.webp 3x" media="(min-width: 1600px)"/>
@@ -191,7 +212,7 @@
           </div>
         </div>
       </section>
-      <section class="amazing">
+      <section class="amazing" id="offers">
         <div class="wrapper">
           <h2 class="title section__title amazing__title">Amazing <span class="title_decor">offer</span></h2>
           <div class="amazing__slider">
@@ -256,7 +277,7 @@
           </div>
         </div>
       </section>
-      <section class="events">
+      <section class="events" id="events">
         <div class="wrapper">
           <div class="events__body">
             <h2 class="title section__title events__title">Featured <span class="title_decor">Events</span></h2>
@@ -270,7 +291,7 @@
                   </div>
                   <div class="event__content">
                     <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
-                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link js-modal-button" href="#">read more </a>
                   </div>
                 </div>
                 <div class="event swiper-slide">
@@ -281,7 +302,7 @@
                   </div>
                   <div class="event__content">
                     <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
-                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link js-modal-button" href="#">read more </a>
                   </div>
                 </div>
                 <div class="event swiper-slide">
@@ -292,7 +313,7 @@
                   </div>
                   <div class="event__content">
                     <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
-                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link js-modal-button" href="#">read more </a>
                   </div>
                 </div>
                 <div class="event swiper-slide">
@@ -303,7 +324,7 @@
                   </div>
                   <div class="event__content">
                     <div class="event__header"><span class="event__title">10th Annual Barrel Tasting</span><span class="event__date">15 Sept</span></div>
-                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link" href="#">read more </a>
+                    <p class="section__descr event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p><a class="link link_bordered event__link js-modal-button" href="#">read more </a>
                   </div>
                 </div>
               </div>
@@ -312,39 +333,39 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="wrapper">
           <div class="contacts__body">
             <h2 class="title section__title contacts__title">Contacs <span class="title_decor">us</span></h2>
             <div class="contacts__content">
               <div class="contacts__text contacts__item">
                 <p class="contacts__descr section__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.Lorem ipsum dolor sit amet, consectetur </p>
-                <div class="contacts__list contact"><a class="contact" href="tel:+012-3254-6987">
+                <div class="contacts__list contact"><a class="contact js-modal-button" href="tel:+012-3254-6987">
                     <div class="contact__body">
                       <svg class="icon-Call contact__icon">
                         <use xlink:href="static/img/svg/sprite-true.svg#Call"></use>
                       </svg><span class="contact__text">+012-3254-6987</span>
-                    </div></a><a class="contact" href="mailto:Food&amp;drink@gmail.com">
+                    </div></a><a class="contact js-modal-button" href="mailto:Food&amp;drink@gmail.com">
                     <div class="contact__body">
                       <svg class="icon-Message contact__icon">
                         <use xlink:href="static/img/svg/sprite-true.svg#Message"></use>
                       </svg><span class="contact__text">Food&amp;drink@gmail.com</span>
-                    </div></a><a class="contact" href="#">
+                    </div></a><a class="contact js-modal-button" href="#">
                     <div class="contact__body">
                       <svg class="icon-Location contact__icon">
                         <use xlink:href="static/img/svg/sprite-true.svg#Location"></use>
                       </svg><span class="contact__text">Brahmanbaira, Dhaka, Bangladesh</span>
                     </div></a></div>
-                <div class="contacts__links"><a class="contacts__link" href="#"><span class="hidden">gmail link</span>
+                <div class="contacts__links"><a class="contacts__link js-modal-button" href="#"><span class="hidden">gmail link</span>
                     <picture>
                       <source srcset="static/img/google.webp" type="image/webp"/><img class="contacts__icon" src="static/img/google.png" alt="google" loading="lazy"/>
-                    </picture></a><a class="contacts__link" href="#"><span class="hidden">twitter link</span>
+                    </picture></a><a class="contacts__link js-modal-button" href="#"><span class="hidden">twitter link</span>
                     <picture>
                       <source srcset="static/img/twitter.webp" type="image/webp"/><img class="contacts__icon" src="static/img/twitter.png" alt="twitter" loading="lazy"/>
-                    </picture></a><a class="contacts__link" href="#"><span class="hidden">linked in link</span>
+                    </picture></a><a class="contacts__link js-modal-button" href="#"><span class="hidden">linked in link</span>
                     <picture>
                       <source srcset="static/img/linkedin.webp" type="image/webp"/><img class="contacts__icon" src="static/img/linkedin.png" alt="linked in" loading="lazy"/>
-                    </picture></a><a class="contacts__link" href="#"><span class="hidden">facebook link</span>
+                    </picture></a><a class="contacts__link js-modal-button" href="#"><span class="hidden">facebook link</span>
                     <picture>
                       <source srcset="static/img/facebook.webp" type="image/webp"/><img class="contacts__icon" src="static/img/facebook.png" alt="facebook" loading="lazy"/>
                     </picture></a></div>
@@ -369,7 +390,7 @@
                       <label class="formUs__label" for="formUs_message">Message</label>
                     </div>
                     <div class="formUs__submit">
-                      <button class="button button_primary formUs__button" type="submit">Send</button>
+                      <button class="button button_primary formUs__button js-modal-button" type="submit">Send</button>
                     </div>
                   </div>
                 </form>
@@ -378,7 +399,7 @@
           </div>
         </div>
       </section>
-      <section class="subscrible">
+      <section class="subscrible" id="subscrible">
         <div class="wrapper">
           <div class="subscrible__body">
             <div class="subscrible__header">
@@ -391,7 +412,7 @@
                   <div class="formSub__field">
                     <input class="formSub__input" id="formSub-email" type="email" placeholder="Email" required="required"/>
                     <label class="hidden" for="formSub-email">Email</label>
-                    <button class="button button_primary formSub__button">Subscrible </button>
+                    <button class="button button_primary formSub__button js-modal-button">Subscrible </button>
                   </div>
                 </div>
               </form>
@@ -400,7 +421,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="links">
       <div class="wrapper">
         <div class="footer__body">
           <div class="footer__links">
@@ -409,11 +430,11 @@
                 <div class="footer-section__header">Company</div>
                 <div class="footer-section__body">
                   <ul class="footer-section__list">
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">About Us</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Contact Us</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Privacy Policy</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Terms &amp; Conditions</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Support Center</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">About Us</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Contact Us</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Privacy Policy</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Terms &amp; Conditions</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Support Center</a></li>
                   </ul>
                 </div>
               </div>
@@ -421,11 +442,11 @@
                 <div class="footer-section__header">question?</div>
                 <div class="footer-section__body">
                   <ul class="footer-section__list">
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Help Support</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Track Order</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Return</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Shipping Info</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">History</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Help Support</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Track Order</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Return</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Shipping Info</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">History</a></li>
                   </ul>
                 </div>
               </div>
@@ -433,11 +454,11 @@
                 <div class="footer-section__header">useful links</div>
                 <div class="footer-section__body">
                   <ul class="footer-section__list">
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Gift Cards</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Size Chart</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">My Account</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">Our Locations</a></li>
-                    <li class="footer-section__item"><a class="footer-section__link link" href="#">FAQS</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Gift Cards</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Size Chart</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">My Account</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">Our Locations</a></li>
+                    <li class="footer-section__item"><a class="footer-section__link link js-modal-button" href="#">FAQS</a></li>
                   </ul>
                 </div>
               </div>
@@ -446,30 +467,30 @@
                 <div class="footer-section__body">
                   <ul class="footer-section__list">
                     <li class="footer-section__list_contacts">
-                      <div class="contacts__links"><a class="contacts__link" href="#"><span class="hidden">gmail link</span>
+                      <div class="contacts__links"><a class="contacts__link js-modal-button" href="#"><span class="hidden">gmail link</span>
                           <picture>
                             <source srcset="static/img/google.webp" type="image/webp"/><img class="contacts__icon" src="static/img/google.png" alt="google" loading="lazy"/>
-                          </picture></a><a class="contacts__link" href="#"><span class="hidden">twitter link</span>
+                          </picture></a><a class="contacts__link js-modal-button" href="#"><span class="hidden">twitter link</span>
                           <picture>
                             <source srcset="static/img/twitter.webp" type="image/webp"/><img class="contacts__icon" src="static/img/twitter.png" alt="twitter" loading="lazy"/>
-                          </picture></a><a class="contacts__link" href="#"><span class="hidden">linked in link</span>
+                          </picture></a><a class="contacts__link js-modal-button" href="#"><span class="hidden">linked in link</span>
                           <picture>
                             <source srcset="static/img/linkedin.webp" type="image/webp"/><img class="contacts__icon" src="static/img/linkedin.png" alt="linked in" loading="lazy"/>
-                          </picture></a><a class="contacts__link" href="#"><span class="hidden">facebook link</span>
+                          </picture></a><a class="contacts__link js-modal-button" href="#"><span class="hidden">facebook link</span>
                           <picture>
                             <source srcset="static/img/facebook.webp" type="image/webp"/><img class="contacts__icon" src="static/img/facebook.png" alt="facebook" loading="lazy"/>
                           </picture></a></div>
-                      <div class="footer-contact__link"><a class="contact" href="tel:+012-3254-6987">
+                      <div class="footer-contact__link"><a class="contact js-modal-button" href="tel:+012-3254-6987">
                           <div class="contact__body">
                             <svg class="icon-Call contact__icon">
                               <use xlink:href="static/img/svg/sprite-true.svg#Call"></use>
                             </svg><span class="contact__text link">+012-3254-6987</span>
-                          </div></a><a class="contact" href="mailto:Food&amp;drink@gmail.com">
+                          </div></a><a class="contact js-modal-button" href="mailto:Food&amp;drink@gmail.com">
                           <div class="contact__body">
                             <svg class="icon-Message contact__icon">
                               <use xlink:href="static/img/svg/sprite-true.svg#Message"></use>
                             </svg><span class="contact__text link">Food&amp;drink@gmail.com</span>
-                          </div></a><a class="contact" href="#">
+                          </div></a><a class="contact js-modal-button" href="#">
                           <div class="contact__body">
                             <svg class="icon-Location contact__icon">
                               <use xlink:href="static/img/svg/sprite-true.svg#Location"></use>
@@ -485,6 +506,14 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay" data-close="true">
+        <div class="modal__window">
+          <div class="modal__close" data-close="true">&times;</div>
+          <p class="modal__text">Данная версия сайта носит демонстрационный характер</p>
+        </div>
+      </div>
+    </div>
     <script src="static/js/header.js"></script>
     <script src="static/js/adapt.js"></script>
     <script src="static/js/sliders.js" type="module"></script>

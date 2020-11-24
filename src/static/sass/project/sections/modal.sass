@@ -1,0 +1,41 @@
+.modal
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1000
+	display: none
+	&.active
+		display: block
+	&__overlay
+		width: 100%
+		min-height: 100%
+		background-color: rgba($black, 0.8)
+		padding: 20px
+		+flex(center, center)
+		overflow: auto
+	&__window
+		height: 300px
+		width: 500px
+		background-color: $black
+		border: 1px solid $border-primary
+		+flex(center, center)
+		padding: 10px
+		position: relative
+	&__text
+		font-family: $font-secondary
+		font-size: 1.5rem
+		text-align: center
+		line-height: 1.5
+		letter-spacing: .15em
+		+phone
+			font-size: 1rem
+	&__close
+		position: absolute
+		color: $font-primary
+		top: 5px
+		right: 10px
+		font-size: 2rem
+		cursor: pointer
+		
