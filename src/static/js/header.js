@@ -52,7 +52,7 @@ searchModal.addEventListener('click', function(e) {
 searchButton.addEventListener('click', function(e) {
 	searchModal.classList.add('active')
 	body.style.marginRight = window.innerWidth - body.offsetWidth + 'px'
-	body.classList.toggle('lock');
+	body.classList.add('lock');
 	e.preventDefault()
 });
 
