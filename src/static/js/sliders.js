@@ -3,6 +3,7 @@ import Swiper from './swiper.js'
 const newWinesSlider = new Swiper('.new__slider', {
 	slidesPerView: 1,
 	spaceBetween: 200,
+	//effect: 'fade',
 	navigation: {
 	    nextEl: '.new__slider-next',
 	    prevEl: '.new__slider-prev',
