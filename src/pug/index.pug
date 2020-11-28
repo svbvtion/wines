@@ -9,9 +9,6 @@ html(lang="en")
 		meta(name="description" content="Food & Drink")
 		title Food &#38; Drink
 		link(rel='icon' href='./favicon.svg' type='image/x-icon')
-		link(rel="stylesheet" type="text/css" href="static/css/normalize.css" media="print" onload="this.media='all'")
-		link(rel="stylesheet" type="text/css" href="static/css/swiper.css" media="print" onload="this.media='all'")
-		link(rel="stylesheet" type="text/css" href="static/css/styles.css" media="print" onload="this.media='all'")
 		link(rel="stylesheet" type="text/css" href="static/css/critical.css")
 	body
 		+search
@@ -28,6 +25,10 @@ html(lang="en")
 		footer.footer#links
 			+footer
 		+modal
+
+		link(rel="stylesheet" type="text/css" href="static/css/normalize.css" media="print" onload="this.media='all'")
+		link(rel="stylesheet" type="text/css" href="static/css/swiper.css" media="print" onload="this.media='all'")
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css" media="print" onload="this.media='all'")
 
 		script(src="static/js/header.js" defer)
 		script(src="static/js/adapt.js" defer)
